@@ -5,7 +5,8 @@ const pathModule = require('node:path');
 const { URL } = require('node:url');
 const PORT = Number(process.env.PORT || 8787);
 const KEY = process.env.GEMINI_API_KEY;
-const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite
+ Copy';
 const MAX_BODY = 12 * 1024 * 1024;
 let rules = '';
 const APP_FILE = pathModule.join(__dirname, 'index.html');
